@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Logo from '../public/Logo.png';
 
-export default () => {
+export default function Homepage() {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
