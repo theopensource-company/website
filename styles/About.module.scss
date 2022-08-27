@@ -12,3 +12,12 @@
         margin: 0 auto;
     }
 }
+
+.teamContainer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
