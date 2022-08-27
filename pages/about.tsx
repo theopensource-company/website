@@ -13,25 +13,22 @@ export default function About() {
       </div>
       <div className="foreground">
         <div className={styles.container}>
-          <h1>Trust Through Vision, Not Through Deceit</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sagittis placerat sem vel dictum. Nullam vitae ultricies enim. Proin
-            quis auctor nulla. Duis sollicitudin sit amet quam at placerat.
-            Vivamus congue mi justo, vitae ultrices velit hendrerit a. Nulla
-            lectus lectus, pharetra quis congue quis, maximus eu ipsum. Sed quis
-            pulvinar eros. Vestibulum aliquet ex et diam tempor luctus.
-            Phasellus quis erat sed libero porttitor mollis. Proin ullamcorper
-            nunc in ligula faucibus maximus. Proin blandit ornare convallis.
-            Fusce tincidunt sit amet risus et fermentum. Donec aliquam nulla
-            nulla, ac condimentum ligula mollis nec. Maecenas non odio non
-            tellus suscipit mattis. Integer ac enim viverra, pellentesque diam
-            ut, mollis nunc.
-          </p>
-          <h2>Meet Our Team</h2>
-          <div className={styles.teamContainer}>
-            {TeamMembers.map((member, i) => TeamMember(member, i))}
-          </div>
+          <section>
+            <h1>Trust Through Vision, Not Through Deceit</h1>
+            <p>
+              We believe in open-source software and it&apos;s endless
+              possibilities. We believe in peeling of the data harvesting and
+              unetchical advertisements off the internet. <br />
+              <br />
+              Join us on our mission, our contribution to the world.
+            </p>
+          </section>
+          <section>
+            <h2>Meet Our Team</h2>
+            <div className={styles.teamContainer}>
+              {TeamMembers.map((member, i) => TeamMember(member, i))}
+            </div>
+          </section>
         </div>
       </div>
     </Layout>
