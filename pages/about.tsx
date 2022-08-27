@@ -16,7 +16,7 @@ export default function About() {
           <section>
             <h1>Trust Through Vision, Not Through Deceit</h1>
             <p>
-              We believe in open-source software and it&apos;s endless
+              We believe in open-source software and its endless
               possibilities. We believe in peeling of the data harvesting and
               unetchical advertisements off the internet. <br />
               <br />
