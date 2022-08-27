@@ -34,6 +34,10 @@ const SvgComponent = ({
       }
     `}</style>
 
+    <path d="M 20,140
+          a 120,120 0 1,0 240,0
+          a 120,120 0 1,0 -240,0" id="curve" fill="transparent" stroke="transparent" />
+
     <g opacity={opacity} transform-origin="center">
       <animateTransform
         attributeName="transform"
@@ -47,9 +51,6 @@ const SvgComponent = ({
 
       <text stroke="#fff" fill="#fff" fontSize={17.6} fontWeight="normal">
         <textPath
-          path="M 20,140
-          a 120,120 0 1,0 240,0
-          a 120,120 0 1,0 -240,0"
           method="stretch"
           xlinkHref="#curve"
         >
