@@ -25,3 +25,8 @@ a {
     background: black;
   }
 }
+
+#app-container {
+  width: 100%;
+  height: calc(100vh - 150px); // -150px for navbar height
+}
