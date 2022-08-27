@@ -7,7 +7,12 @@ type Props = {
   opacity?: number;
 };
 
-const SvgComponent = ({ width = 300, height = 300, speed = 1, opacity = 1.0 }: Props) => (
+const SvgComponent = ({
+  width = 300,
+  height = 300,
+  speed = 1,
+  opacity = 1.0,
+}: Props) => (
   <svg
     baseProfile="full"
     width={width}
@@ -31,13 +36,14 @@ const SvgComponent = ({ width = 300, height = 300, speed = 1, opacity = 1.0 }: P
 
     <g opacity={opacity} transform-origin="center">
       <animateTransform
-        	attributeName="transform"
-          attributeType="XML"
-          type="rotate"
-          from="0"
-          to={speed * 360}
-          dur="40s"
-          repeatCount="indefinite"/>
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        from="0"
+        to={speed * 360}
+        dur="40s"
+        repeatCount="indefinite"
+      />
 
       <text stroke="#fff" fill="#fff" fontSize={17.6} fontWeight="normal">
         <textPath
