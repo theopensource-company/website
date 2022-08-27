@@ -1,37 +1,9 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
 import Layout from "../components/Layout";
 import CircleText from "../components/Images/CircleText";
 import TeamMember from "../components/About/TeamMember";
-
+import { TeamMembers } from "../constants/TeamMembers";
 import styles from "../styles/About.module.scss";
-
-import PortraitMicha from '../assets/image/team/m-d-vries.jpg';
-import PortraitMorgan from '../assets/image/team/m-hofmann.jpg';
-import PortraitTies from '../assets/image/team/t-wellhuner.jpeg';
-
-
-export const TeamMembers: Array<{
-  name: string;
-  portrait: StaticImageData;
-  role: string;
-}> = [
-  {
-    name: "Micha de Vries",
-    portrait: PortraitMicha,
-    role: "CEO, Developer"
-  },
-  {
-    name: "Morgan Hofmann",
-    portrait: PortraitMorgan,
-    role: "Developer, Product"
-  },
-  {
-    name: "Ties Wellhüner",
-    portrait: PortraitTies,
-    role: "Product, Graphic Design"
-  }
-];
 
 export default function About() {
   return (
@@ -56,11 +28,9 @@ export default function About() {
             tellus suscipit mattis. Integer ac enim viverra, pellentesque diam
             ut, mollis nunc.
           </p>
-          <h1>Meet Our Team</h1>
+          <h2>Meet Our Team</h2>
           <div className={styles.teamContainer}>
-            {TeamMembers.map((member) => {
-              return <TeamMember name={member.name} portrait={member.portrait} role={member.role} />
-            })}
+            {TeamMembers.map((member, i) => TeamMember(member, i))}
           </div>
         </div>
       </div>

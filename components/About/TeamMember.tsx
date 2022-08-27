@@ -1,6 +1,6 @@
+import React from "react";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
-import * as React from "react";
 
 import Logo from "../../public/Logo.png";
 import styles from "../../styles/TeamMember.module.scss";
@@ -11,16 +11,15 @@ type Props = {
   role?: string;
 };
 
-const TeamMember = ({
-  name = "Unknown",
-  portrait = Logo,
-  role = "Rookie"
-}: Props) => (
-  <div className={styles.member}>
-    <Image src={portrait} />
-    <h2>{name}</h2>
-    <span>{role}</span>
-  </div>
-);
-
-export default TeamMember;
+export default function TeamMember(
+  { name = "Unknown", portrait = Logo, role = "Rookie" }: Props,
+  i: number
+) {
+  return (
+    <div className={styles.member} key={i}>
+      <Image src={portrait} alt={name} priority />
+      <h4>{name}</h4>
+      <span>{role}</span>
+    </div>
+  );
+}
