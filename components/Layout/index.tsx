@@ -54,7 +54,7 @@ const Layout = ({ title, description, robots, children }: Props) => (
       />
     </Head>
     <Navbar />
-    <div id="app">{children}</div>
+    <div id="app-container">{children}</div>
   </>
 );
 
