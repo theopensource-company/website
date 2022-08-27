@@ -8,7 +8,7 @@ type Props = {
     children: ReactNode;
 }
 
-export default ({
+const Layout = ({
   title,
   description,
   robots,
@@ -35,4 +35,6 @@ export default ({
             {children}
         </div>
     </>
-)
+);
+
+export default Layout;
