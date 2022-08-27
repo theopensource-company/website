@@ -22,13 +22,6 @@ const SvgComponent = ({ width = 300, height = 300 }: Props) => (
         THE OPEN SOURCE COMPANY THE OPEN SOURCE COMPANY THE OPEN SOURCE COMPANY
       </textPath>
     </text>
-
-    <path d="
-        M 30,80
-        Q 80,30 130,80
-        Q 80,130 30,80
-        Z
-    " stroke="white"></path>
   </svg>
 )
 
