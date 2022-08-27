@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { ReactNode } from "react";
 
+import Navbar from "./Navbar";
+
 type Props = {
   title?: string;
   description?: string;
@@ -51,7 +53,8 @@ const Layout = ({ title, description, robots, children }: Props) => (
         }
       />
     </Head>
-    <div id="app">{children}</div>
+    <Navbar />
+    <div id="app-container">{children}</div>
   </>
 );
 
