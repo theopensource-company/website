@@ -17,7 +17,7 @@ export default function TeamMember(
 ) {
   return (
     <div className={styles.member} key={i}>
-      <Image src={portrait} alt={name} priority />
+      <Image src={portrait} alt={name} priority loading="eager" />
       <h4>{name}</h4>
       <span>{role}</span>
     </div>
