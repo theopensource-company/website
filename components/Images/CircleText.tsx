@@ -3,10 +3,11 @@ import * as React from "react";
 type Props = {
   width?: number | string;
   height?: number | string;
+  speed?: number;
   opacity?: number;
 };
 
-const SvgComponent = ({ width = 300, height = 300, opacity = 1.0 }: Props) => (
+const SvgComponent = ({ width = 300, height = 300, speed = 1, opacity = 1.0 }: Props) => (
   <svg
     baseProfile="full"
     width={width}
@@ -28,7 +29,16 @@ const SvgComponent = ({ width = 300, height = 300, opacity = 1.0 }: Props) => (
       }
     `}</style>
 
-    <g opacity={opacity}>
+    <g opacity={opacity} transform-origin="center">
+      <animateTransform
+        	attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          from="0"
+          to={speed * 360}
+          dur="40s"
+          repeatCount="indefinite"/>
+
       <text stroke="#fff" fill="#fff" fontSize={17.6} fontWeight="normal">
         <textPath
           path="M 20,140

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <Layout>
       <div className="background flex-center">
-        <CircleText width="600" height="600" opacity={0.1} />
+        <CircleText width="600" height="600" speed={1} opacity={0.1} />
       </div>
       <div className="foreground">
         <div className={styles.container}>
