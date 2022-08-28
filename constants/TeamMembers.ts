@@ -2,7 +2,7 @@ import { StaticImageData } from 'next/image';
 
 import PortraitMicha from '../assets/image/team/m-d-vries.jpg';
 import PortraitMorgan from '../assets/image/team/m-hofmann.jpg';
-import PortraitTies from '../assets/image/team/t-wellhuner.jpeg';
+import PortraitTies from '../assets/image/team/t-wellhuner.jpg';
 
 export const TeamMembers: Array<{
     name: string;
