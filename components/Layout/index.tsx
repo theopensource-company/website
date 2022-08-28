@@ -34,15 +34,25 @@ export default function Layout({
         <meta name="robots" content={robots ?? "index, follow"} />
 
         <meta name="title" content={title ?? "The Open Source Company"} />
+
         <meta name="og:title" content={title ?? "The Open Source Company"} />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://theopensource.company/" />
         <meta
-          name="og:site_anme"
+          name="og:image"
+          itemProp="image primaryImageOfPage"
+          content="https://theopensource.company/Logo.png"
+        />
+        <meta
+          name="og:site_name"
           content={title ?? "The Open Source Company"}
         />
+
         <meta
           name="twitter:title"
           content={title ?? "The Open Source Company"}
         />
+        <meta name="twitter:card" content="summary" />
 
         <meta
           name="description"
