@@ -25,6 +25,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: 1050px) {
+        h1 {
+            max-width: 700px;
+            text-align: left;
+            margin: 0.83em auto;
+        }
+    }
 }
 
 .teamContainer {
