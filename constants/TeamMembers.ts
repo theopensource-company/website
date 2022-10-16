@@ -24,4 +24,10 @@ export const TeamMembers: Array<{
         portrait: PortraitTies,
         role: "Product, Graphic Design"
     },
+    {
+        name: "Hessel van Bakel",
+        portrait: PortraitTies,
+        role: "Product, Graphic Design"
+    },
+
 ];
