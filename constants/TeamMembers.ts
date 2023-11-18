@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
 
 import PortraitMicha from '../assets/image/team/m-d-vries.jpg';
-import PortraitMorgan from '../assets/image/team/m-hofmann.jpg';
+import PortraitHazel from '../assets/image/team/h-hofmann.jpg';
 import PortraitTies from '../assets/image/team/t-wellhuner.jpg';
 import PortraitHessel from '../assets/image/team/h-v-bakel.jpg';
 
@@ -16,8 +16,8 @@ export const TeamMembers: Array<{
         role: "CEO, Developer"
     },
     {
-        name: "Morgan Hofmann",
-        portrait: PortraitMorgan,
+        name: "Hazel Hofmann",
+        portrait: PortraitHazel,
         role: "Developer, Product"
     },
     {
