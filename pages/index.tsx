@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import Logo from "../public/Logo.png";
 import Image from "next/image";
+import { GithubIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -31,6 +32,14 @@ export default function Home() {
               <br /> <br />
               Join us on our mission, our contribution to the world.
             </p>
+            <a
+              className={styles.github}
+              href="https://github.com/theopensource-company"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubIcon>test</GithubIcon>
+            </a>
           </section>
           <section>
             <h2>Meet Our Team</h2>

@@ -5,6 +5,7 @@
     h1, h2 {
         font-size: 2.5em;
         text-align: center;
+        margin: 0;
     }
 
     h2 {
@@ -24,6 +25,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2em;
     }
 
     @media (max-width: 1050px) {
@@ -64,4 +66,9 @@
     @media (max-width: 650px) {
         max-width: 50%;
     }
+}
+
+.github {
+    transform: scale(2);
+    margin: 1em;
 }
