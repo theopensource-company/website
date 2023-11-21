@@ -32,7 +32,12 @@ export default function Home() {
               <br /> <br />
               Join us on our mission, our contribution to the world.
             </p>
-            <a className={styles.github} href="https://github.com/theopensource-company" target="_blank">
+            <a
+              className={styles.github}
+              href="https://github.com/theopensource-company"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubIcon>test</GithubIcon>
             </a>
           </section>
